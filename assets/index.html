@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="theme-switch">
+      <div class="time-selector">
+        <label for="time-options" class="choose-time">Choose Time: </label>
+        <select id="time-options">
+          <option value="15">15 seconds</option>
+          <option value="30">30 seconds</option>
+          <option value="45">45 seconds</option>
+          <option value="60">60 seconds</option>
+        </select>
+      </div>
+      <span id="theme-label"> Light </span>
+      <input type="checkbox" id="theme-toggle" />
+      <label for="theme-toggle" class="slider round"></label>
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <input type="text" class="input-field" />
+        <div class="content-box">
+          <div class="typing-text">
+            <p></p>
+          </div>
+          <div class="content">
+            <ul class="result-details">
+              <li class="time">
+                <p>Time Left:</p>
+                <span><b>30</b>s</span>
+              </li>
+              <li class="mistake">
+                <p>Mistakes:</p>
+                <span>0</span>
+              </li>
+              <li class="wpm">
+                <p>WPM:</p>
+                <span>0</span>
+              </li>
+              <li class="cpm">
+                <p>CPM:</p>
+                <span>0</span>
+              </li>
+            </ul>
+            <button>Try Again</button>
+          </div>
+        </div>
+        <div class="modal-container">
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <h2>Typing Results</h2>
+              <p>Spees(WPM): <span id="modal-wpm">0</span></p>
+              <p>CPM: <span id="modal-cpm">0</span></p>
+              <div class="grid__btn">
+                <button id="modal-close">Close</button>
+                <button id="modal-try">Try Again</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
